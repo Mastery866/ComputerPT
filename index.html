@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Profile</title>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Quicksand:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* PAGE */
+      body {
+        margin: 0;
+        padding: 10px;
+        background-color: #fff1f7;
+        font-family: "Quicksand", Arial, sans-serif;
+        color: #33253f;
+      }
+
+      /* MAIN CONTAINER */
+      .container {
+        padding: 20px;
+        width: 850px;
+        margin: 20px auto;
+      }
+
+      /* PROFILE HEADER */
+      .name {
+        background-color: #e86ca5;
+        color: white;
+        text-align: center;
+        border: 3px solid #8b4c9e;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 5px 12px #d9a6c0;
+      }
+
+      /* PROFILE IMAGE */
+      .profile-photo img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 6px solid #ffffff;
+        box-shadow: 0 3px 8px #9b5a88;
+        transition: 0.4s ease;
+        cursor: pointer;
+      }
+
+      .profile-photo img:hover {
+        transform: scale(1.1) rotate(-3deg);
+        box-shadow: 0 6px 16px #e86ca5;
+        animation: cutieWiggle 0.6s ease-in-out infinite;
+      }
+
+      @keyframes cutieWiggle {
+        0%,
+        100% {
+          transform: scale(1.1) rotate(-3deg);
+        }
+        50% {
+          transform: scale(1.1) rotate(3deg);
+        }
+      }
+
+      /* NAME */
+      .name h1 {
+        margin: 15px 0 5px;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-family: "Baloo 2", cursive;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+
+      .name p {
+        margin: 5px;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: "Baloo 2", cursive;
+      }
+
+      /* SECTIONS */
+      .section {
+        margin: 25px 0;
+        border: 2px solid #d98ab4;
+        border-radius: 18px;
+        padding: 20px;
+        background-color: #fffafd;
+        box-shadow: 0 4px 10px #e6c5d8;
+      }
+
+      /* SECTION HEADINGS */
+      .section h2 {
+        text-align: center;
+        color: #7a3f83;
+        font-size: 24px;
+        border-bottom: 3px solid #e6a0c4;
+        padding-bottom: 8px;
+        margin-top: 0;
+        font-family: "Baloo 2", cursive;
+      }
+
+      /* ABOUT ME */
+      .about-text {
+        font-size: 17px;
+        text-align: justify;
+        line-height: 1.6;
+        font-weight: 600;
+      }
+
+      /* TABLES */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        font-weight: 600;
+        font-family: "Quicksand", Arial, sans-serif;
+      }
+
+      th,
+      td {
+        border: 2px solid #e2a1c2;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #b56ba5;
+        color: white;
+        text-align: center;
+        font-family: "Baloo 2", cursive;
+        letter-spacing: 0.5px;
+      }
+
+      td {
+        background-color: #fff5fa;
+        font-family: "Quicksand", Arial, sans-serif;
+      }
+
+      /* HOBBIES */
+      ul {
+        list-style-type: none;
+        padding-left: 10px;
+        font-family: "Quicksand", Arial, sans-serif;
+      }
+
+      li {
+        margin: 12px 0;
+        padding: 10px;
+        font-size: 18px;
+        background-color: #fff0f6;
+        border: 1px solid #e4a5c5;
+        border-radius: 10px;
+        font-weight: 600;
+        font-family: "Quicksand", Arial, sans-serif;
+      }
+
+      /* ICONS */
+      li i {
+        width: 30px;
+        margin-right: 8px;
+        color: #9b4f91;
+      }
+
+      td i {
+        width: 30px;
+        margin-right: 8px;
+        color: #9b4f91;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- PROFILE HEADER -->
+      <div class="name">
+        <div class="profile-photo">
+          <img src="Aisha.jfif" alt="Aisha Steff" />
+        </div>
+
+        <h1>Aisha Steff J. Balani</h1>
+
+        <p>Grade 10 Student</p>
+
+        <p>Tiktokerist | Maganda</p>
+      </div>
+
+      <!-- ABOUT ME -->
+      <div class="section">
+        <h2>About Me</h2>
+
+        <p class="about-text">
+          I’m Aisha Steff J. Balani, a Grade 10 student who is passionate about
+          learning, exploring new ideas, and discovering my interests. I enjoy
+          spending time with my friends and family, learning new skills, and
+          taking on new challenges that help me grow as a person. For me, being
+          a student is not only about getting good grades but also about
+          becoming responsible, confident, creative, and respectful. I believe
+          that with determination, hard work, and a positive mindset, I can
+          overcome challenges, achieve my goals, and continue becoming a better
+          version of myself.
+        </p>
+      </div>
+
+      <!-- PERSONAL INFORMATION -->
+      <div class="section">
+        <h2>Personal Information</h2>
+
+        <table>
+          <tr>
+            <th>Information</th>
+            <th>Details</th>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-user"></i>Full Name</td>
+            <td>Aisha Steff J. Balani</td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-graduation-cap"></i>Grade/Section</td>
+            <td>Grade 10</td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-cake-candles"></i>Birthdate</td>
+            <td>March 21, 2011</td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-hourglass-half"></i>Age</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-location-dot"></i>Address</td>
+            <td>N/A</td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-book"></i>Favorite Subject</td>
+            <td>Math</td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-palette"></i>Favorite Color</td>
+            <td>Pink</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- HOBBIES -->
+      <div class="section">
+        <h2>My Hobbies</h2>
+
+        <ul>
+          <li>
+            <i class="fa-brands fa-tiktok"></i>
+            Tiktok
+          </li>
+
+          <li>
+            <i class="fa-solid fa-computer"></i>
+            Playing Mobile Games
+          </li>
+
+          <li>
+            <i class="fa-solid fa-pen-nib"></i>
+            Drawing
+          </li>
+
+          <li>
+            <i class="fa-solid fa-music"></i>
+            Listening to Music
+          </li>
+        </ul>
+      </div>
+
+      <!-- COMPUTER SKILLS -->
+      <div class="section">
+        <h2>My Computer Skills</h2>
+
+        <table>
+          <tr>
+            <th>Skills</th>
+            <th>Level</th>
+          </tr>
+
+          <tr>
+            <td>HTML</td>
+            <td>Beginner</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+            <td>Beginner</td>
+          </tr>
+
+          <tr>
+            <td>Media Editing</td>
+            <td>Intermediate</td>
+          </tr>
+
+          <tr>
+            <td>Photo Editing</td>
+            <td>Intermediate</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
