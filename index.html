@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Quicksand:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
     <style>
       /* PAGE */
       body {
@@ -76,6 +75,11 @@
         font-family: "Baloo 2", cursive;
         letter-spacing: 1px;
         font-weight: 600;
+        text-shadow:
+          2px 2px 0px #8b4c9e,
+          4px 4px 8px rgba(139, 76, 158, 0.4);
+        animation: popIn 0.9s ease;
+        letter-spacing: 1px;
       }
 
       .name p {
@@ -104,6 +108,19 @@
         padding-bottom: 8px;
         margin-top: 0;
         font-family: "Baloo 2", cursive;
+        animation: popIn 0.9s ease;
+        text-shadow: 1px 1px 0px #ffb6dc;
+      }
+
+      @keyframes popIn {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
       }
 
       /* ABOUT ME */
@@ -173,6 +190,10 @@
         margin-right: 8px;
         color: #9b4f91;
       }
+
+      .center-text {
+        text-align: center;
+      }
     </style>
   </head>
 
@@ -193,7 +214,7 @@
 
       <!-- ABOUT ME -->
       <div class="section">
-        <h2>About Me</h2>
+        <h2><i class="fa-solid fa-heart-circle-check"></i> About Me</h2>
 
         <p class="about-text">
           I’m Aisha Steff J. Balani, a Grade 10 student who is passionate about
@@ -210,7 +231,7 @@
 
       <!-- PERSONAL INFORMATION -->
       <div class="section">
-        <h2>Personal Information</h2>
+        <h2><i class="fa-solid fa-id-card"></i> Personal Information</h2>
 
         <table>
           <tr>
@@ -240,76 +261,76 @@
 
           <tr>
             <td><i class="fa-solid fa-location-dot"></i>Address</td>
-            <td>N/A</td>
+            <td>Purok 1 House No. 10 Brgy Aguinaldo Sta., Rosa Nueva Ecija</td>
           </tr>
 
           <tr>
             <td><i class="fa-solid fa-book"></i>Favorite Subject</td>
-            <td>Math</td>
+            <td>English</td>
           </tr>
 
           <tr>
             <td><i class="fa-solid fa-palette"></i>Favorite Color</td>
-            <td>Pink</td>
+            <td>Pink, Violet</td>
           </tr>
         </table>
       </div>
 
       <!-- HOBBIES -->
       <div class="section">
-        <h2>My Hobbies</h2>
+        <h2><i class="fa-solid fa-heart"></i> My Hobbies</h2>
 
         <ul>
-          <li>
-            <i class="fa-brands fa-tiktok"></i>
-            Tiktok
-          </li>
-
-          <li>
-            <i class="fa-solid fa-computer"></i>
-            Playing Mobile Games
-          </li>
-
           <li>
             <i class="fa-solid fa-pen-nib"></i>
             Drawing
           </li>
 
           <li>
-            <i class="fa-solid fa-music"></i>
-            Listening to Music
+            <i class="fa-solid fa-microphone"></i>
+            Singing
+          </li>
+
+          <li>
+            <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
+            Dancing
+          </li>
+
+          <li>
+            <i class="fa-solid fa-pen"></i>
+            Writing
           </li>
         </ul>
       </div>
 
       <!-- COMPUTER SKILLS -->
       <div class="section">
-        <h2>My Computer Skills</h2>
+        <h2><i class="fa-solid fa-laptop-code"></i> My Computer Skills</h2>
 
         <table>
           <tr>
-            <th>Skills</th>
-            <th>Level</th>
+            <th class="center-text">Skills</th>
+            <th class="center-text">Level</th>
           </tr>
 
           <tr>
-            <td>HTML</td>
-            <td>Beginner</td>
+            <td class="center-text">HTML</td>
+            <td class="center-text">Beginner</td>
           </tr>
 
           <tr>
-            <td>CSS</td>
-            <td>Beginner</td>
+            <td class="center-text">CSS</td>
+            <td class="center-text">Beginner</td>
           </tr>
 
           <tr>
-            <td>Media Editing</td>
-            <td>Intermediate</td>
+            <td class="center-text">Media Editing</td>
+            <td class="center-text">Intermediate</td>
           </tr>
 
           <tr>
-            <td>Photo Editing</td>
-            <td>Intermediate</td>
+            <td class="center-text">Photo Editing</td>
+            <td class="center-text">Intermediate</td>
           </tr>
         </table>
       </div>
